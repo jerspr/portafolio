@@ -1,0 +1,883 @@
+/* BROWSER RESET */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+:focus {
+	outline: 0;
+}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	font-family:Arial, Helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+.clear {
+	clear:both;	
+}
+p {
+	line-height:22px;
+	font-size:12px;	
+	font-family: 'DroidSansRegular';
+	padding-bottom:10px;
+}
+a {
+	text-decoration:none;	
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+   display:block;
+}
+@font-face {
+  font-family: 'abel_proregular';
+  src: url('../fonts/abelpro-webfont.eot');
+  src: url('../fonts/abelpro-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abelpro-webfont.woff2') format('woff2'),
+       url('../fonts/abelpro-webfont.woff') format('woff'),
+       url('../fonts/abelpro-webfont.ttf') format('truetype'),
+       url('../fonts/abelpro-webfont.svg#abel_proregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'abel_probold';
+  src: url('../fonts/abelpro-bold-webfont.eot');
+  src: url('../fonts/abelpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abelpro-bold-webfont.woff2') format('woff2'),
+       url('../fonts/abelpro-bold-webfont.woff') format('woff'),
+       url('../fonts/abelpro-bold-webfont.ttf') format('truetype'),
+       url('../fonts/abelpro-bold-webfont.svg#abel_probold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'timberwolf_extra-expXexpanded';
+  src: url('../fonts/timberwolfextraexpand-webfont.eot');
+  src: url('../fonts/timberwolfextraexpand-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/timberwolfextraexpand-webfont.woff2') format('woff2'),
+       url('../fonts/timberwolfextraexpand-webfont.woff') format('woff'),
+       url('../fonts/timberwolfextraexpand-webfont.ttf') format('truetype'),
+       url('../fonts/timberwolfextraexpand-webfont.svg#timberwolf_extra-expXexpanded') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body{width:100%;overflow-x:hidden;background-color:#000;}
+#main-content{left: 0px;top:0px;position: fixed;width: 100%;height:100%;}
+#wrapper{height:8420px;}
+#topLogo{margin-top: 6px;margin-left: 5px;float: left;}
+/********************** PARALLAX STYLES *************************************/
+.parallax{width: 960px;margin:0 auto;position:relative;}
+#topPM{position:absolute;top:35px;left:280px;width:217px;height:216px;background-image:url(../img/logo_diego.png);z-index:3;}
+#explosion{
+	z-index:2;
+	width:2220px;
+	height:1400px;
+	position:absolute;
+	top:-410px;
+	left:-620px;
+}
+#explosion img{width: 100%;height: 100%;}
+#explosion .bg_layer{position: absolute;top: 0;left:0;bottom: 0;right: 0;background: url(../img/bg.png) repeat;}
+.bg{
+	z-index:2;
+	width:2220px;
+	height:1400px;
+	position:absolute;
+	top:-410px;
+	left:-620px;
+	/*display:none;*/
+	/*background: url(../img/home.jpg) no-repeat;background-size: 100% 100%;*/
+}
+#home .parallax #line1 {
+	position:absolute;
+	top:-280px;
+	left:-800px;
+	z-index:2;
+}
+#home .parallax #line2 {
+	position:absolute;
+	top:-340px;
+	right:-1260px;
+	z-index:2;
+}
+#about .parallax #me {
+	right:-90px;	
+	top:200px;
+	position:absolute;
+	z-index:2;
+}
+#about .parallax #html, #about .parallax #css, #about .parallax #jquery, #about .parallax #php, #about .parallax #firebug, #about .parallax #threeds, #about .parallax #aptana, #about .parallax #ai, #about .parallax #ps, #about .parallax #wamp {
+	display:block;
+	float:left;
+	width:90px!important;
+	height:90px!important;
+}
+#home .parallax a #begin {
+	right:460px;	
+	top:420px;
+	position:absolute;
+	z-index:2;	
+}	
+#home .parallax a#beginLink {
+	display:block;
+	height: 25px;
+	width: 31px;
+	right:460px;
+	top:420px;
+	position:absolute;
+	z-index:10;
+	/*background-image: url(img/downArrow.png);*/
+}
+	
+#services .parallax #dottedLine {
+	right:-750px;	
+	top:200px;
+	position:absolute;
+	z-index:2;	
+}
+	
+#services .parallax #line3 {
+	right:-680px;	
+	top:-750px;
+	position:absolute;
+	z-index:2;	
+}
+
+#contact .parallax #line4 {
+	right:-1020px;	
+	top:-750px;
+	position:absolute;
+	z-index:2;	
+}
+
+#contact .parallax #line5 {
+	right:-1020px;	
+	top:-750px;
+	position:absolute;
+	z-index:2;	
+}
+
+#services #myProcess {
+	left:0px;
+	top:0px;
+	position:absolute;
+	z-index:1;	
+}	
+/*********************** MAIN STYLES *********************************/
+.container {
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+.initialBG {
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:100000;
+	background-color:#d4d4d4;
+	height:2000px;
+}
+#qLoverlay {
+	/*background-image: url(img/topBG.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color:#d4d4d4!important;
+}
+#qLbar {
+	display:none;
+}
+#qLpercentage {
+	color:#171717!important;
+	font-size:24px!important;
+	font-family:'DroidSansBold',arial;
+}
+/********************** NAV STYLES *************************************/
+#topNav {
+	position:fixed;
+	background-color:#000;
+	width:100%;
+	height:50px;
+	top:0px;
+	z-index:1000;
+}
+#topNav ul {
+	float:right;
+}	
+#topNav ul li {
+	float:left;
+	margin-top:15px;
+}	
+#topNav ul li a {
+	display:block;
+	padding:5px 10px;
+	text-decoration:none;
+	color:#999;
+	font-family:'DroidSansRegular', arial;
+	text-transform:uppercase;
+	font-size:12px;
+}	
+#topNav ul li:nth-child(1) a {
+	padding:5px 10px 5px 0px;
+}
+#topNav ul li:last-child a {
+	padding:5px 15px 5px 15px;
+}
+#topNav ul li.start a {
+	color:#fbb900;
+}
+/*********************** FOOTER STYLES *************************************/
+#footer {
+	clear:both;
+	position:fixed;
+	z-index:1000;
+	width:100%;
+	height:40px;
+	background-color:#000;
+	bottom:0px;
+	left:0px;
+	padding-top:20px;
+}
+#footer p {
+	color:#999;
+	padding-left:10px;
+}
+#footer p#copyRight {
+	float:left;
+	width:300px;
+}
+#footer p#footerInfo {
+	float:right;
+	width:300px;
+	text-align:right;
+	padding-right:10px;
+}
+/********************** HOME STYLES *************************************/
+#home {
+	background-color:#d4d4d4;	
+	width: 100%;
+	padding-top:200px;
+	height:850px;
+	overflow:hidden;
+	position:relative;
+}	
+#whiteBG {
+	/*background-image: url(img/topBG.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+	height:900px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+hgroup#hello {
+	font-family:'DroidSansRegular', arial;
+	position:absolute;
+	right:150px;
+	top:70px;
+	z-index:2;
+	font-weight:normal;
+}	
+hgroup#hello h1 {
+	font-family:'timberwolf_extra-expXexpanded', arial;
+	color:#000;
+	padding:4px 8px 0px 0px;
+	font-size:55px;
+	width:274px;
+	margin-bottom:1px;
+	font-weight:normal;
+}
+hgroup#hello h2 {
+	background-color:#000;
+	color:#fff;
+	padding:4px 8px 4px 8px;
+	font-size:23px;
+	width:280px;
+	font-weight:normal;
+	margin-bottom:1px;
+	font-family: 'abel_proregular', arial;
+	text-decoration: underline;
+}	
+hgroup#hello h2.continued {
+	width:195px;
+	margin-bottom:1px;
+}
+hgroup#hello h3 a {
+	color:#fff;
+}
+hgroup#hello h3 {
+	background-color:#000;
+	color:#fff;
+	padding:4px 8px 4px 8px;
+	font-size:20px;
+	width:210px;
+	margin-bottom:1px;	
+	font-weight:normal;
+	font-family: 'abel_proregular',arial;
+	text-decoration: underline;
+}	
+hgroup#hello h4 {
+	background-color:#000;
+	color:#fff;
+	padding:4px 8px 4px 8px;
+	font-size:16px;
+	display:inline-block;
+	font-weight:normal;
+}
+hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial;letter-spacing: 3px;position: absolute;width: 400px;left: -150px;bottom: -90px;}
+/********************** ABOUT STYLES *************************************/
+#about {
+	background-color:#000;
+	height:1150px;
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+#about .about {
+	position:absolute;
+	left:0px;
+	top:180px;
+	width:420px;
+	color:#fff;
+	text-align:justify;
+	z-index:10;	
+}
+#about a {
+	color:#fff;
+	border-bottom:1px dashed #999;
+}
+#about .about h3 {
+	font-family: 'abel_proregular', arial;
+	color:#fff;
+	font-size:60px;	
+	display:inline-block;
+	letter-spacing:-1px;
+	padding-bottom:30px;
+	font-weight:normal;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.5); /* 50% black coming from the top */
+}
+#about .about p{font-family: 'abel_proregular', arial;font-size: 14px;color: #fff;}
+#about .about p span{font-family: 'abel_probold', arial;font-size: 14px;color: #fff;}
+#about .about h4 {
+	font-family:'DroidSansBold', arial;
+	padding-bottom:5px;
+}
+#about .about h3.second {
+	margin-top:30px;
+	padding-bottom:0px;
+	font-size: 35px;
+	color: #f1b80d;
+	font-family: 'abel_proregular', arial;
+	letter-spacing: 3px;
+}
+#about .about h3.second span{font-family: 'abel_probold', arial;}
+#about .about h6{font-family:'abel_proregular',arial;color:#fff;font-size:14px;text-align: right;margin-top: 10px;}
+#about .about h2 {
+	font-family:'DroidSans', arial;
+	background-color:#000;
+	color:#fff;
+	padding:4px 8px 4px 8px;
+	font-size:52px;	
+	display:inline-block;
+}
+#aboutHeadings h4 {
+	font-size:12px;
+	margin-bottom:17px;
+}
+
+
+#skills {
+	margin-top:20px;	
+	width:550px;
+}
+
+#skills #plus {
+	background-image: url(img/icons/plus.png);
+	height: 84px;
+	width: 84px;	
+	display:block;
+	margin:22px auto 0px auto;
+	text-indent:-9999px;
+	opacity:0;
+}	
+
+#skills #icons img {
+	padding-right:15px;
+	padding-bottom:15px;	
+	opacity: 0;
+}
+
+#skills #icons #ai{
+	margin-left:1px;
+}
+
+#skills #icons #aptana {
+
+}
+
+
+#about .about #desDevPercentage {
+	margin-top:30px;
+}
+
+#aboutBG {
+	background-image: url(../img/about.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	width:100%;	
+	height:1100px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#about #desDevPercentage {
+	position:relative;
+}
+
+#about #desDevPercentage #desPercent, #about #desDevPercentage #devPercent {
+	font-size:50px;
+	float:left;
+	display:block;
+	width:120px;
+	padding-right:90px;
+	text-align:center;
+	margin-left:-10px;
+	margin-top:10px;
+	position:relative;
+}
+
+#about #desDevPercentage #desPercent span, #about #desDevPercentage #devPercent span {
+	font-size:20px;
+	position:absolute;
+	right:83px;
+	top:10px;
+}
+
+#about #designer, #about #developer {
+	display:block;
+	float:left;
+	font-family: 'StMarieThin', arial;
+	font-size:20px;
+}
+
+#about #designer {
+	margin-left:8px;
+}
+
+#about #developer {
+	margin-left:116px;
+}
+
+#about #and {
+	font-size:50px;
+	color:#28cefe;
+	position:absolute;
+	top: 78px;
+	left:137px;
+	font-family: 'StMarieThin', arial;
+}
+/****************************** SERVICES STYLES *************************************/
+#services {
+	height:1150px;
+	width:100%;
+	overflow:hidden;
+	position:relative;	
+	padding-top:110px;
+	background-color:#fff;
+}
+#services .services {
+	position:absolute;
+	left:0px;
+	top:10px;
+	z-index:100;
+}
+#serviceBG {
+	background-image: url(../img/servicio.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;	
+	height:1000px;
+}
+#services h1 {
+	font-family: 'abel_proregular', arial;
+	font-size:60px;
+	letter-spacing:-3px;
+	margin-bottom: 50px;
+	color: #000;
+}
+#services article > span{font-family: arial;color: #000;font-size: 16px;margin-bottom: 30px;display: block;}
+#services article {
+	float:left;
+	margin-top:30px;
+	width:320px;
+	height: 425px;
+}
+#services article.website>span{margin-left: 18px;}
+#services article.wordpress>span{margin-left: 90px;}
+#services article.digital>span{margin-left: 180px;}
+#services article.digital .digitalIcon {
+	width:179px;
+	height:178px;
+	background-image:url(../img/3.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	float:right;
+}
+#services article.website .websiteIcon {
+	width:178px;
+	height:178px;
+	background-image:url(../img/1.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+#services article.wordpress .wordpressIcon {
+	width:180px;
+	height:180px;
+	background-image:url(../img/2.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin:0 auto;
+}
+
+#services article.wordpress .wordpressIcon span, #services article.website .websiteIcon span, #services article.digital .digitalIcon span {
+	display:block;
+	text-indent:-9999px;
+	opacity:0;
+}
+
+#services article.wordpress .wordpressIcon span {
+	width:180px;
+	height:180px;
+	background-image:url(../img/2.png);
+	background-repeat:no-repeat;
+	background-position:0px -180px;
+}
+
+#services article.website .websiteIcon span {
+	width:178px;
+	height:178px;
+	background-image:url(../img/1.png);
+	background-repeat:no-repeat;
+	background-position:0px -178px;
+}
+
+#services article.digital .digitalIcon span {
+	width:179px;
+	height:178px;
+	background-image:url(../img/3.png);
+	background-repeat:no-repeat;
+	background-position:0px -178px;
+}
+
+#services article.wordpress ul {
+	width:100px;
+	margin:0 auto;	
+}
+#services article.website ul {
+	width:250px;
+	margin:0 auto;
+}
+#services article.digital ul {
+	width:150px;
+	float:right;
+}
+#services article ul {
+	padding-top:30px;
+	font-size:14px;
+} 
+#services article ul li {
+	padding:5px 0px;		
+	padding-left:5px;
+	width:260px;
+	font-size: 14px;font-family: arial;color: #000;
+}
+#services #process {
+	width:100%;
+	margin-top:40px;
+	padding-top:20px;
+	position:relative;
+	z-index:1;
+}
+#services #process h2 {
+	font-family: 'StMarieThin', arial;
+	font-size:24px;
+	letter-spacing:-1px;
+	text-indent:-9999px;
+}
+/**********************PORTFOLIO*******************/
+#portfolio {
+	height:2000px;
+	width:100%;
+	overflow:hidden;
+	position:relative;	
+	padding-top:4px;
+	background-color:#000;
+	min-width:1050px!important;
+}
+#portfolioBG {
+	background-image:url(../img/work.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;	
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;	
+	height:1400px;
+}
+#portfolioContainer {
+	margin: 0 auto;
+	display:block;
+	min-width:1050px!important;
+}
+#portfolioContainer .portfolioItem {
+  float: left;
+  font-size: 11px;
+  padding: 13px 13px 10px 13px;
+  color:#fff;
+   
+}
+#portfolioContainer .portfolioItem p {
+	width: 312px;
+	padding-top:10px;
+	padding-bottom:0px;
+	font-size:11px;
+	font-family: 'DroidSansRegular';
+	line-height:16px;
+}
+#portfolioContainer .portfolioItem .imageHolder {
+	width:280px;
+	height:165px;
+	position:relative;
+	overflow:hidden;
+}
+.group h2{font-size: 60px;font-family: 'abel_proregular', arial;color: white;}
+.group p{font-size: 14px;font-family: 'abel_proregular', arial;color: white;}
+#portfolioContainer .portfolioItem .imageHolder .zoom {
+	/*background-image:url(img/icons/zoom.png);*/
+	width:57px;
+	height:57px;
+	display:block;
+	position:absolute;
+	top:-57px;
+	left:-57px;
+	margin-top:0px!important;
+}
+
+#portfolioContainer .portfolioItem a {
+	display:block;
+	position:absolute;
+	top:12px;
+	left:12px;
+	width:312px;
+	height:204px;
+	/*background-image:url(img/png.png);*/
+}
+#portfolioContainer .portfolioItem a.top {
+	z-index:10;
+}
+/**********************CONTACT*******************/
+#contact {
+	height:1100px;
+	width:100%;
+	overflow:hidden;
+	position:relative;	
+	padding-top:4px;
+	background-color:#d6d6d6;
+}
+#contact .contact {
+	position:absolute;
+	left:0px;
+	text-align: center;
+	top:10px;
+	width: 100%;
+	z-index:100;
+}
+#contactBG {
+	/*background-image:url(img/contactBG.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center top;	
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;	
+	height:1100px;
+}
+#contact .contact h1 {
+	font-family: 'StMarieThin', arial;
+	font-size:54px;
+	margin-top: 200px;
+	text-align: center;
+	letter-spacing:-3px;
+	color:#fff;
+}
+#contact .contact h1 a {
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+}
+#contact .contact #contactForm {
+	float:left;
+	width:960px;
+	margin-top:50px;
+}
+#contact .contact #contactForm input[type=text]{
+	display:block;
+	padding:15px;
+	font-family: 'DroidSansRegular';
+	font-size:12px;
+	width:300px;
+	margin-bottom:15px;
+	background-color:#222;
+	border:none;
+	color:#fff;
+}
+#contact .contact #contactForm .inputContainer {
+	width:330px;
+	height:52px;
+	margin-bottom:10px;
+	position:relative;
+}
+#contact .contact #contactForm .textAreaContainer {
+	width:565px;
+	height:235px;
+	position:relative;
+}
+#contact .contact #contactForm .inputContainer .error {
+	position:absolute;
+	top:17px;
+	right:15px;
+	font-family: 'DroidSansRegular';
+	color: #28cefe;
+	font-size:12px;
+	display:none;
+}
+#contact .contact #contactForm .textAreaContainer .error {
+	position:absolute;
+	top:20px;
+	right:15px;
+	font-family: 'DroidSansRegular';
+	color: #28cefe;
+	font-size:12px;
+	display:none;
+}
+#contact .contact #contactForm select {
+	font-family: 'DroidSansRegular';
+	font-size:12px;
+	width:332px;
+	margin-bottom:15px;
+	background-color:#222;
+	color:#fff;
+	padding:10px;
+	padding-top:15px;
+	display:block;
+	border:none;
+	line-height: 3em;
+}
+#contact .contact #contactForm select option {
+	font-family: 'DroidSansRegular';
+	font-size:12px;
+	color:#fff;
+	padding:0px 15px;
+	border:none;
+}
+#contact .contact #contactForm textarea {
+	padding:15px;
+	width:535px;
+	max-width:535px;
+	height:200px;
+	max-height:200px;
+	font-size:12px;
+	font-family: 'DroidSansRegular';
+	background-color:#222;
+	color:#fff;
+	border:none;
+}
+#contact .contact #contactForm input[type=submit] {
+	display:block;
+	font-family: 'DroidSansRegular';
+	padding:10px;
+	background-color:#222;
+	margin-top:15px;
+	color:#fff;
+	cursor: pointer;
+	float:left;
+	border:none;
+}
+#contact .contact #contactForm input[type=text]:focus, #contact .contact #contactForm input[type=submit]:focus, #contact .contact #contactForm textarea:focus, #contact .contact #contactForm select:focus  {
+	border:1px solid #28cefe;
+}
+#contact .contact #contactForm #message {
+	float:right;
+}
+#contact .contact #contactForm #inputs {
+	float:left;
+	border-right:1px dashed #ccc;
+	padding-right:30px;
+	height:230px;
+}
+#contact .contact #contactForm #sending, #contact .contact #contactForm #success, #contact .contact #contactForm #noSuccess {
+	float:left;
+	margin-top:30px;
+	margin-left:10px;
+	background-image:url(img/ajax-loader.gif);
+	width:16px;
+	height:16px;
+	padding-left:20px;
+	font-size:12px;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	display:none;
+	color:#fff;
+}
+#contact .contact #contactForm #success {
+	background-image:url(img/icons/smile.png);
+	background-position:top left;
+	text-indent:0px;
+	width:300px;
+	height:20px;
+	padding-top:4px;
+}
+#contact .contact #contactForm #noSuccess {
+	background-image:url(img/icons/frown.png);
+	background-position:top left;
+	text-indent:0px;
+	width:300px;
+	height:20px;
+	padding-top:4px;
+}
+span#siteUrl {
+	display:none;
+}
