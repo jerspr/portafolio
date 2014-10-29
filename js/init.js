@@ -1,16 +1,14 @@
 $(function(){
 	//explosion! I'll probably be making a plugin for sequencing like this soon...
-	var siteUrl = $('#siteUrl').html();
-	var $path = siteUrl + 'assets/img/explosion';
 	var explosion = [];
 	var $frameNum;
 	var $spacing = 40;
 	var $frames = 25;
 	//add all the frames into an array
-	for( var s = 0; s < $frames; s++ ) {
+	/*for( var s = 0; s < $frames; s++ ) {
 		explosion[s] = $path + '/' + s +'.jpg';
 	}
-	explosion.shift();
+	explosion.shift();*/
 	//cache
 	$('body').append('<div id="cache"></div>');
 	$('#cache').hide();
@@ -27,7 +25,7 @@ $(function(){
 		}*/
 	});
 	//preload
-	$("body").queryLoader2({
+	/*$("body").queryLoader2({
 		percentage : true,
 		completeAnimation : 'grow',
 		onLoadComplete : complete
@@ -35,7 +33,7 @@ $(function(){
 	function complete() {
 		$('.initialBG').remove();
 		$('#qLoverlay').fadeOut(1000);
-	}
+	}*/
 	//site of the day 
 	$(window).load(function(){
 		if( $(window).width() < 1230 ) {
@@ -271,6 +269,20 @@ $(function(){
 			$(this).stop().animate({ 'color' : '#999 '});
 		}
 	});
+	$('ul.nav_menu li a').hover(function(){
+		if( $(this).parent().hasClass('current') ) {
+		}
+		else {
+			$(this).stop().animate({ 'color' : '#fff '});	
+		}
+	},function(){
+		if( $(this).parent().hasClass('current') ) {
+			
+		}
+		else {
+			$(this).stop().animate({ 'color' : '#999 '});
+		}
+	});
 	$(window).scroll(function() {
 		var scroll_position = $(window).scrollTop();
 		//// home
@@ -279,6 +291,11 @@ $(function(){
 			$('#topNav ul li a.home').parent().addClass('current');
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
 			$('#topNav ul li a.home').stop().animate({'color' : '#fbb900'},50);	
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.home').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.home').stop().animate({'color' : '#fbb900'},50);
 		}
 		//// about
 		if (scroll_position >= 851 && scroll_position <= 2000) {
@@ -286,45 +303,71 @@ $(function(){
 			$('#topNav ul li a.about').parent().addClass('current');
 			$('#topNav ul li a').stop().animate({'color' : '#999'});
 			$('#topNav ul li a.about').stop().animate({'color' : '#fbb900'});
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.about').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});
+			$('ul.nav_menu li a.about').stop().animate({'color' : '#fbb900'});
 		}
 		//// services
 		if (scroll_position >= 2000 && scroll_position <= 3290) {
 			$('#topNav ul li').removeClass();
 			$('#topNav ul li a.services').parent().addClass('current');
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
-			$('#topNav ul li a.services').stop().animate({'color' : '#fbb900'});	
+			$('#topNav ul li a.services').stop().animate({'color' : '#fbb900'});
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.services').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.services').stop().animate({'color' : '#fbb900'});
 		}
 		//// portfolio
 		if (scroll_position >= 3290 && scroll_position <= 7000) {
 			$('#topNav ul li').removeClass();
 			$('#topNav ul li a.portfolio').parent().addClass('current');
-			
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
-			$('#topNav ul li a.portfolio').stop().animate({'color' : '#fbb900'});	
+			$('#topNav ul li a.portfolio').stop().animate({'color' : '#fbb900'});
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.portfolio').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.portfolio').stop().animate({'color' : '#fbb900'});	
 		}
 		//// contact
 		if ( $(window).width() < 1390 && scroll_position >= 7090 ) {
 			$('#topNav ul li').removeClass();
 			$('#topNav ul li a.contact').parent().addClass('current');
-			
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
-			$('#topNav ul li a.contact').stop().animate({'color' : '#fbb900'});	
+			$('#topNav ul li a.contact').stop().animate({'color' : '#fbb900'});
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.contact').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.contact').stop().animate({'color' : '#fbb900'});
 		}
 		
 		if ( $(window).width() > 1391 && scroll_position >= 6090 ) {
 			$('#topNav ul li').removeClass();
 			$('#topNav ul li a.contact').parent().addClass('current');
-			
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
 			$('#topNav ul li a.contact').stop().animate({'color' : '#fbb900'});	
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.contact').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.contact').stop().animate({'color' : '#fbb900'});	
 		}
 		
 		if ( $(window).width() > 1730 && scroll_position >= 5300 ) {
 			$('#topNav ul li').removeClass();
 			$('#topNav ul li a.contact').parent().addClass('current');
-			
 			$('#topNav ul li a').stop().animate({'color' : '#999'});	
-			$('#topNav ul li a.contact').stop().animate({'color' : '#fbb900'});	
+			$('#topNav ul li a.contact').stop().animate({'color' : '#fbb900'});
+			/**/
+			$('ul.nav_menu li').removeClass();
+			$('ul.nav_menu li a.contact').parent().addClass('current');
+			$('ul.nav_menu li a').stop().animate({'color' : '#999'});	
+			$('ul.nav_menu li a.contact').stop().animate({'color' : '#fbb900'});	
 		}
 	});
 	//SERVICE ICONS 
@@ -519,26 +562,6 @@ $(function(){
 			$('#portfolioContainer').stop().animate({ top : (scroll_position * object_speed) - 1800 },delay);
 		}
 		////CONTACT 
-		if( scroll_position >= 5000 && $(window).width() < 1390 ) {
-			$('#contactBG').stop().animate({  top : (scroll_position / object_speed5)-6200 },delay);
-			$('#contact .contact').stop().animate({  top : (scroll_position * object_speed4) -5700 },delay);
-			$('#contact #line4').stop().animate({  top : (scroll_position * object_speed4) -6190 },delay);
-			$('#contact #line5').stop().animate({  top : (scroll_position * 0.65 ) -5370 },delay);
-		}
-		
-		if( scroll_position >= 5000 && $(window).width() > 1391 ) {
-			$('#contactBG').stop().animate({  top : (scroll_position / object_speed5)-5200 },delay);
-			$('#contact .contact').stop().animate({  top : (scroll_position * object_speed4) -4800 },delay);
-			$('#contact #line4').stop().animate({  top : (scroll_position * object_speed4) -5290 },delay);
-			$('#contact #line5').stop().animate({  top : (scroll_position * 0.65 ) -4660 },delay);
-		}
-		
-		if( scroll_position >= 4500 && $(window).width() > 1731 ) {
-			$('#contactBG').stop().animate({  top : (scroll_position / object_speed5)-4600 },delay);
-			$('#contact .contact').stop().animate({  top : (scroll_position * object_speed4) -4230 },delay);
-			$('#contact #line4').stop().animate({  top : (scroll_position * object_speed4) -4690 },delay);
-			$('#contact #line5').stop().animate({  top : (scroll_position * 0.65 ) -4160 },delay);
-		}
 	});
 	//remove items based on scroll position
 	

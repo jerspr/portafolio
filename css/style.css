@@ -241,7 +241,7 @@ body{width:100%;overflow-x:hidden;background-color:#000;}
 	padding:5px 10px;
 	text-decoration:none;
 	color:#999;
-	font-family:'DroidSansRegular', arial;
+	font-family:arial;
 	text-transform:uppercase;
 	font-size:12px;
 }	
@@ -428,8 +428,7 @@ hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial
 	margin:22px auto 0px auto;
 	text-indent:-9999px;
 	opacity:0;
-}	
-
+}
 #skills #icons img {
 	padding-right:15px;
 	padding-bottom:15px;	
@@ -443,8 +442,6 @@ hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial
 #skills #icons #aptana {
 
 }
-
-
 #about .about #desDevPercentage {
 	margin-top:30px;
 }
@@ -711,7 +708,7 @@ hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial
 }
 /**********************CONTACT*******************/
 #contact {
-	height:1100px;
+	height:900px;
 	width:100%;
 	overflow:hidden;
 	position:relative;	
@@ -727,7 +724,7 @@ hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial
 	z-index:100;
 }
 #contactBG {
-	/*background-image:url(img/contactBG.jpg);*/
+	background-image:url(../img/contact.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;	
 	position:absolute;
@@ -736,6 +733,30 @@ hgroup#hello p{font-size: 16px;font-weight: bold;color: white;font-family: arial
 	width:100%;	
 	height:1100px;
 }
+.footer_b{height: 75px;width: 100%;position: fixed;background: #000;bottom: 0;z-index: 999}
+.footer_b p{float: left;margin-left: 20px;line-height: 75px;font-size: 14px;font-family: arial;color: #fff;}
+.footer_b ul.social{float: right;margin-right: 25px;margin-top: 22px;}
+.footer_b ul.social li{float: left;margin-left: 10px;}
+.footer_b ul.social li:first-child{margin-left: 0;}
+.footer_b ul.social li a{width: 31px;height: 30px;display: block;}
+.footer_b ul.social li a.goo_m{background: url(../img/google.png) no-repeat;}
+.footer_b ul.social li a.tw{background: url(../img/twitter.png) no-repeat;}
+.footer_b ul.social li a.fb{background: url(../img/facebook.png) no-repeat;}
+.cnt_contenedor h3{color: #000;font-size: 60px;font-family: 'abel_proregular', arial;text-align: left;margin-top: 120px;margin-bottom: 30px;}
+.cnt_contenedor h6{text-align: center;font-size: 16px;font-family: arial;font-weight: bold;color: #fff;letter-spacing: 3px;margin-bottom: 30px;}
+.form_contact{width: 530px;margin: 0 auto;}
+.form_contact .fluid_r{display: inline-block;width: 100%;vertical-align: top;}
+.form_contact .fluid_r .left_f{width: 265px;float: left;}
+.form_contact .fluid_r .right_f{width: 265px;float: right;}
+.form_contact .fluid_r .in_frm input{width: 240px;height: 30px;border: 0;padding: 0 10px;font-size: 13px;color: #bfbfbf;font-family: arial;margin-bottom: 15px;}
+.form_contact .fluid_r .left_f input{float: left;}
+.form_contact .fluid_r .right_f input{float: right;}
+.form_contact .fluid_r .frm_mensaje{height: 60px;padding: 5px 10px;width: 510px;border:0;font-size: 13px;color: #bfbfbf;font-family: arial;margin-bottom: 15px;}
+ul.nav_menu{width: 421px;margin: 0 auto;}
+ul.nav_menu li{float: left;margin-top: 30px;}
+ul.nav_menu li a{display: block;padding: 5px 10px;text-decoration: none;color: #999;font-family:arial;text-transform: uppercase;font-size: 12px;}
+ul.nav_menu li.start a{color: #fbb900;}
+button.btn{width: 105px;height: 35px;border:0;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-size: 13px;font-family: arial;color: #fff;background: #000;}
 #contact .contact h1 {
 	font-family: 'StMarieThin', arial;
 	font-size:54px;
